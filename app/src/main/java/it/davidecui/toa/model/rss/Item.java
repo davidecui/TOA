@@ -13,8 +13,8 @@ import java.util.List;
 @NamespaceList({
         @Namespace(prefix = "content", reference = "http://purl.org/rss/1.0/modules/content/"),
         @Namespace(prefix = "wfw", reference = "http://wellformedweb.org/CommentAPI/"),
-        @Namespace(prefix = "dc", reference = "http://purl.org/dc/elements/1.1/"),
-        //@Namespace(reference = "http://purl.org/rss/1.0/modules/slash/", prefix = "slash")
+        //@Namespace(reference = "http://purl.org/rss/1.0/modules/slash/", prefix = "slash"),
+        @Namespace(prefix = "dc", reference = "http://purl.org/dc/elements/1.1/")
 })
 public class Item {
     @Element(name = "title", required = false)

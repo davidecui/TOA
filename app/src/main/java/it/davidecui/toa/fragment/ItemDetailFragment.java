@@ -28,10 +28,6 @@ public class ItemDetailFragment extends Fragment {
      */
     public static final String ARG_ITEM_ID = "item_id";
 
-    /**
-     * The dummy content this fragment is presenting.
-     */
-    private TOAItem mItem;
     private String mKey;
 
     /**
@@ -60,12 +56,12 @@ public class ItemDetailFragment extends Fragment {
     }
 
     public void setTOAContent(TOAContent data) {
-        mItem = data.getItem(mKey);
+        TOAItem item = data.getItem(mKey);
 
         // Show the dummy content as text in a TextView.
         View view = getView();
-        if (view != null && mItem != null) {
-            ((TextView) view.findViewById(R.id.item_detail)).setText(mItem.getContent());
+        if (view != null && item != null) {
+            ((TextView) view.findViewById(R.id.item_detail)).setText(item.getContent());
         }
     }
 }

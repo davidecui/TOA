@@ -90,6 +90,7 @@ public class SupportLoaderTestCase extends AndroidTestCase {
 
         // Block on the queue waiting for the result of the load to be inserted
         T result;
+        //noinspection LoopStatementThatDoesntLoop
         while (true) {
             try {
                 result = queue.take();

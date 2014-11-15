@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="it.davidecui.toa" >
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -21,7 +22,8 @@
         <activity
             android:name="it.davidecui.toa.activity.ItemDetailActivity"
             android:label="@string/title_item_detail"
-            android:parentActivityName="it.davidecui.toa.activity.ItemListActivity" >
+            android:parentActivityName="it.davidecui.toa.activity.ItemListActivity"
+            tools:ignore="UnusedAttribute">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.ItemListActivity" />

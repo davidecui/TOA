@@ -6,13 +6,14 @@ import junit.framework.Assert;
 
 public class TOAFeedRequestTest extends InstrumentationTestCase {
 
+    private static final String FEED_URL = "http://thoughtsofangel.com/feed/";
+
     private TOAFeedRequest mTarget;
-    private String mUrl = "http://thoughtsofangel.com/feed/";
 
     @Override
     public void setUp() throws Exception {
         super.setUp();
-        mTarget = new TOAFeedRequest(mUrl);
+        mTarget = new TOAFeedRequest(FEED_URL);
     }
 
     public void testRequestTOAFeed() throws Exception {
