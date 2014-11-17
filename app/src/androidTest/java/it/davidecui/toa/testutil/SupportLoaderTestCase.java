@@ -1,8 +1,5 @@
 package it.davidecui.toa.testutil;
 
-/**
- * Created by davide on 15/11/2014.
- */
 /*
  * Copyright (C) 2010 The Android Open Source Project
  *
@@ -29,6 +26,9 @@ import android.test.AndroidTestCase;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
+ * This class is the copy of original {@link android.test.LoaderTestCase} from Android Framework,
+ * replacing the android.content.Loader import with the support one
+ *
  * A convenience class for testing {@link android.content.Loader}s. This test case
  * provides a simple way to synchronously get the result from a Loader making
  * it easy to assert that the Loader returns the expected result.

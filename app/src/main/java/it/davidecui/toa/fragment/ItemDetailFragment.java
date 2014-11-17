@@ -1,7 +1,5 @@
 package it.davidecui.toa.fragment;
 
-import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,7 +11,6 @@ import android.widget.TextView;
 import it.davidecui.toa.R;
 import it.davidecui.toa.model.TOAContent;
 import it.davidecui.toa.model.TOAItem;
-import it.davidecui.toa.service.TOAUpdateServiceConnection;
 
 /**
  * A fragment representing a single Item detail screen.

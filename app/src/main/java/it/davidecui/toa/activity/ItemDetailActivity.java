@@ -1,15 +1,14 @@
 package it.davidecui.toa.activity;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 
 import it.davidecui.toa.fragment.ItemDetailFragment;
 import it.davidecui.toa.R;
-import it.davidecui.toa.fragment.ItemListFragment;
 import it.davidecui.toa.model.TOAContent;
 import it.davidecui.toa.service.TOAUpdateServiceConnection;
 
@@ -31,7 +30,10 @@ public class ItemDetailActivity extends TOAActivity {
         setContentView(R.layout.activity_item_detail);
 
         // Show the Up button in the action bar.
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        ActionBar actionBar = getActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         // savedInstanceState is non-null when there is fragment state
         // saved from previous configurations of this activity

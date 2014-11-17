@@ -8,7 +8,10 @@ import it.davidecui.toa.fragment.TOADataCallbacks;
 import it.davidecui.toa.fragment.TOAItemSelectionCallbacks;
 import it.davidecui.toa.model.TOAContent;
 
-
+/**
+ * Utility class used for Fragment testing.
+ * All fragment test cases use this activity for fragment inflation
+ */
 public class TestActivity extends Activity implements TOAItemSelectionCallbacks, TOADataCallbacks {
 
     @Override

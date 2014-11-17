@@ -1,22 +1,13 @@
 package it.davidecui.toa.activity;
 
-import android.app.Activity;
-import android.content.BroadcastReceiver;
-import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.ServiceConnection;
 import android.os.Bundle;
-import android.os.IBinder;
 
 import it.davidecui.toa.R;
 import it.davidecui.toa.fragment.ItemDetailFragment;
 import it.davidecui.toa.fragment.ItemListFragment;
 import it.davidecui.toa.fragment.TOAItemSelectionCallbacks;
 import it.davidecui.toa.model.TOAContent;
-import it.davidecui.toa.service.LocalBinder;
-import it.davidecui.toa.service.TOAService;
 
 
 /**

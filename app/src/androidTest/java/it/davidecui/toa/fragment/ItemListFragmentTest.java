@@ -3,6 +3,8 @@ package it.davidecui.toa.fragment;
 
 import android.app.Fragment;
 
+import it.davidecui.toa.testutil.FragmentTestCase;
+
 /**
  * Created by davide on 12/10/2014.
  */

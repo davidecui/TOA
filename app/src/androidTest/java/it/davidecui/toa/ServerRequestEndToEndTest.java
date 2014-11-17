@@ -8,6 +8,7 @@ import it.davidecui.toa.util.TOAFeedSerializer;
 /**
  * Created by davide on 28/09/2014.
  *
+ * Walking skeleton test
  */
 public class ServerRequestEndToEndTest extends InstrumentationTestCase {
 

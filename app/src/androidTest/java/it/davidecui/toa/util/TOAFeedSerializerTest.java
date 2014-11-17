@@ -40,9 +40,10 @@ public class TOAFeedSerializerTest extends InstrumentationTestCase {
         TOAFeedRequest mockRequest = Mockito.mock(TOAFeedRequest.class);
         when(mockRequest.getContent()).thenReturn(testString);
 
+        //noinspection EmptyCatchBlock
         try {
             target.serializeFeed(mockRequest);
-            Rss serializedContent = target.getSerializedContent();
+            target.getSerializedContent();
             fail("ValueRequiredException not thrown");
         } catch (ValueRequiredException expected) {
         }

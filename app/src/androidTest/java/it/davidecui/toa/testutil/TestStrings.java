@@ -2,6 +2,8 @@ package it.davidecui.toa.testutil;
 
 /**
  * Created by davide on 30/09/2014.
+ *
+ * Test strings used for model parsing
  */
 public class TestStrings {
     public String getValidRssWithOneItem() {

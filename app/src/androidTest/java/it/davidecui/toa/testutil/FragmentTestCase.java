@@ -1,11 +1,10 @@
-package it.davidecui.toa.fragment;
+package it.davidecui.toa.testutil;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.test.ActivityInstrumentationTestCase2;
 
 import it.davidecui.toa.R;
-import it.davidecui.toa.testutil.TestActivity;
 
 public abstract class FragmentTestCase extends ActivityInstrumentationTestCase2<TestActivity>{
 
