@@ -15,7 +15,7 @@ android {
 
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -29,8 +29,11 @@ android {
             exclude group: 'xpp3', module: 'xpp3'
         }
 
-        androidTestCompile 'com.jakewharton.espresso:espresso:1.1-r3'
-        androidTestCompile 'com.jakewharton.espresso:espresso-support-v4:1.1-r3'
+        // patched version of espresso (https://github.com/freezy/double-espresso)
+        // TODO: replace with the official one when it will be patched
+        androidTestCompile 'com.jakewharton.espresso:espresso:1.1-r4-patched'
+        androidTestCompile 'com.jakewharton.espresso:espresso-support-v4:1.1-r4-patched'
+
         androidTestCompile 'org.mockito:mockito-core:1.9.5'
         androidTestCompile 'com.google.dexmaker:dexmaker:1.1'
         androidTestCompile 'com.google.dexmaker:dexmaker-mockito:1.1'
